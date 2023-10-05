@@ -11,6 +11,7 @@ using namespace std;
 // for up to five seconds and print the result at every time step
 
 
+
 int main()
 {
 	// Design aircraft by picking favorite non-zero real numbers for Lp abd Ldelta
@@ -25,7 +26,7 @@ int main()
 	double p[502]; //roll rate array
 	p[0] = 1; //initial roll rate
 
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < size; i++) //for loop to run through whole array
 	{
 		double time = dt * i; //total time
 		// deflection angle depends on time (=1 if between 0 and 2 seconds, =0 if greater than 2)
